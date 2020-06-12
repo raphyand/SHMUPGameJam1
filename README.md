@@ -18,5 +18,20 @@ Premise: Someone stole his ACORN
 
 
 Three Places to find items:
-- His Study
-- 
+- His Study in the Trees of Central Park
+- Outside his study (Park area, grass and sidewalk, etc.)
+- Bar (Interior) 
+  - Speakeasy (Prohibition area)
+
+Programming -
+   - Raycasting, and Point-and-Click
+   - Cursor hovers over, probably has some effect
+   - makes items noticeable 
+   
+Dialogue 
+   - 1st person perspective 
+   - Dialogue box for monologue/asides
+   - Twitch the nose for cute effects
+   
+   
+   
