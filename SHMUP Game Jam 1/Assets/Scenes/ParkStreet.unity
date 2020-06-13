@@ -320,10 +320,25 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5719470836777230510, guid: f38747b5116c42541b36a82033fe317f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -134
+      objectReference: {fileID: 0}
+    - target: {fileID: 5719470837558840457, guid: f38747b5116c42541b36a82033fe317f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 376
+      objectReference: {fileID: 0}
     - target: {fileID: 5719470837558840456, guid: f38747b5116c42541b36a82033fe317f,
         type: 3}
       propertyPath: m_Text
       value: Park/Street
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145727485497940056, guid: f38747b5116c42541b36a82033fe317f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 433
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f38747b5116c42541b36a82033fe317f, type: 3}

@@ -14,6 +14,10 @@ public class DialogueTrigger : MonoBehaviour
           exitDialogue();
      }
 
+     void Start()
+     {
+          ui_Holder.SetActive(false);
+     }
 
      // Start is called before the first frame update
      void OnMouseDown()
@@ -23,7 +27,11 @@ public class DialogueTrigger : MonoBehaviour
                ui_Holder.SetActive(true);
                TriggerDialogue();
           }
-          else ui_Holder.SetActive(false);
+          else
+          {
+               Debug.Log("Not pressing on interactable");
+               ui_Holder.SetActive(false);
+          }
      }
 
      void exitDialogue()
