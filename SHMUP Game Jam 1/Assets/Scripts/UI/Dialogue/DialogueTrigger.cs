@@ -9,6 +9,11 @@ public class DialogueTrigger : MonoBehaviour
      GameObject ui_Holder;
 
 
+     void Update()
+     {
+          exitDialogue();
+     }
+
 
      // Start is called before the first frame update
      void OnMouseDown()
@@ -21,6 +26,12 @@ public class DialogueTrigger : MonoBehaviour
           else ui_Holder.SetActive(false);
      }
 
+     void exitDialogue()
+     {
+          if (Input.GetKeyDown(KeyCode.Escape))
+               ui_Holder.SetActive(false);
+     }
+     
 
      public void TriggerDialogue()
      {

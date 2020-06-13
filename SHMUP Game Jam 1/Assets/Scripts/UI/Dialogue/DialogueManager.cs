@@ -35,13 +35,14 @@ public class DialogueManager : MonoBehaviour
                return;
           }
           string sentence = sentences.Dequeue();
+          //dialogueText.text = sentence;
           StopAllCoroutines();
           StartCoroutine(TypeSentence(sentence));
      }
 
      IEnumerator TypeSentence(string sentence)
      {
-          dialogueText.text += "";
+          dialogueText.text = "";
           foreach(char letter in sentence.ToCharArray())
           {
                dialogueText.text += letter;
