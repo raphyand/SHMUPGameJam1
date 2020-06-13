@@ -31,8 +31,12 @@ public class DialogueManager : MonoBehaviour
      {
           if (sentences.Count == 0)
           {
-
+               EndDialogue();
+               return;
           }
+          string sentence = sentences.Dequeue();
+          StopAllCoroutines();
+          StartCoroutine(TypeSentence(sentence));
      }
 
      IEnumerator TypeSentence(string sentence)
