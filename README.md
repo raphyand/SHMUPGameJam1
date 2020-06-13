@@ -2,7 +2,9 @@
 
 
 Words:
-Mysterious Squirrel
+Mysterious Squirrel Hate
+
+
 Point & Click
 Pretty cool squirrel
 Clicker is an ACORN
