@@ -60,3 +60,11 @@ crashlytics-build.properties
 
 SHMUP Game Jam 1/Temp/UnityLockfile
 *.log
+*.meta
+*.txt
+*.json
+*.info
+*.txt
+*.log
+*.log
+*.dll
