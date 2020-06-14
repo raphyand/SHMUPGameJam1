@@ -236,6 +236,36 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -125
       objectReference: {fileID: 0}
+    - target: {fileID: 8795276363788445312, guid: e820c3cea87692a43bee09fd0e718225,
+        type: 3}
+      propertyPath: m_Name
+      value: Item Holder
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795276363788445312, guid: e820c3cea87692a43bee09fd0e718225,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 320114693, guid: e820c3cea87692a43bee09fd0e718225, type: 3}
+      propertyPath: m_Name
+      value: Item 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 702226100, guid: e820c3cea87692a43bee09fd0e718225, type: 3}
+      propertyPath: m_Name
+      value: Item 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1683287678, guid: e820c3cea87692a43bee09fd0e718225, type: 3}
+      propertyPath: m_Name
+      value: Item 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979910671, guid: e820c3cea87692a43bee09fd0e718225, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1979910671, guid: e820c3cea87692a43bee09fd0e718225, type: 3}
+      propertyPath: m_Name
+      value: Item
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e820c3cea87692a43bee09fd0e718225, type: 3}
 --- !u!224 &591923797280532051 stripped

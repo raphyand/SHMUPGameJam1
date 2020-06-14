@@ -7,7 +7,8 @@ public class DialogueTrigger : MonoBehaviour
      public Dialogue dialogue;
      [SerializeField]
      GameObject ui_Holder;
-
+     [SerializeField]
+     Item myItem;
 
      void Update()
      {
@@ -26,6 +27,7 @@ public class DialogueTrigger : MonoBehaviour
           {
                ui_Holder.SetActive(true);
                TriggerDialogue();
+               myItem.setIsFound(true);
           }
           else
           {
