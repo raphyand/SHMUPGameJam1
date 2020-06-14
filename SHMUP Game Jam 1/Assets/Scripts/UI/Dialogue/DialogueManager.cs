@@ -5,16 +5,40 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-     public Text nameText;
-     public Text dialogueText;
+    public Text nameText;
+    public Text dialogueText;
+    public Image spriteRenderer;
+    public Sprite[] spriteArr;
+    public int currentSprite = 0;
+    public bool defaultPic = true;
+    public bool confusedPic = false;
 
-     private Queue<string> sentences;
+
+    private Queue<string> sentences;
     // Start is called before the first frame update
     void Start()
     {
-          sentences = new Queue<string>(); // Cache a new spot in memory 
+        sentences = new Queue<string>(); // Cache a new spot in memory 
     }
+    //void Update()
+    //{
+    //    ChangeSprite();
+    //}
 
+    void ChangeSprite()
+    {
+
+
+        if(defaultPic == true)
+        {
+            currentSprite = 0;
+        }
+        else if((confusedPic == true) && (defaultPic == false))
+        {
+            currentSprite = 1;
+        }
+        spriteRenderer.sprite = spriteArr[currentSprite];
+    }
     public void StartDialogue(Dialogue dialogue)
      {
           Debug.Log("Starting conversation with " + dialogue.name);
@@ -45,6 +69,21 @@ public class DialogueManager : MonoBehaviour
           dialogueText.text = "";
           foreach(char letter in sentence.ToCharArray())
           {
+            if(letter == '.')
+            {
+                confusedPic = false;
+                defaultPic = true;
+                ChangeSprite();
+            }
+            else if(letter == '?')
+            {
+                confusedPic = true;
+                defaultPic = false;
+                ChangeSprite();
+            }
+          }
+          foreach(char letter in sentence.ToCharArray())
+          {
                dialogueText.text += letter;
                yield return null;
           }
@@ -54,4 +93,5 @@ public class DialogueManager : MonoBehaviour
 
 
 
-}
+
+    }
