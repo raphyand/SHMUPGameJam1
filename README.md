@@ -2,12 +2,15 @@
 
 
 Words:
-Mysterious Squirrel
+Mysterious Squirrel Hate
+
+
 Point & Click
 Pretty cool squirrel
 Clicker is an ACORN
 "Someone stole his acorn in the woods"
 Night In the Woods, anthropomorphized SQUIRREL
+
 Detective H.B JABBERCHIN
 New YoWK Noire Film Detective Vibe
 Roarin' 20s/Squeakin' 20s 
