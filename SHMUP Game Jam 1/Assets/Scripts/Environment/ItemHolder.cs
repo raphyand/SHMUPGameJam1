@@ -5,12 +5,28 @@ using UnityEngine;
 public class ItemHolder : MonoBehaviour
 {
 
-     public List<Item> itemList;
+     public Item[] myItemHolder;
 
-    // Start is called before the first frame update
-    void Start()
+     static ItemHolder instance;
+     void Awake()
+     {
+          if (instance != null)
+          {
+               Destroy(gameObject);
+          }
+          else
+          {
+               instance = this;
+               DontDestroyOnLoad(gameObject);
+          }
+
+     }
+
+
+     // Start is called before the first frame update
+     void Start()
     {
-          itemList = new List<Item>();
+          //Ui
     }
 
     // Update is called once per frame

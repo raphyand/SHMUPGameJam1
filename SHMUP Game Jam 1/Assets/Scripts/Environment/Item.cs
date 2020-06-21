@@ -7,12 +7,16 @@ public class Item : MonoBehaviour
 {
      bool isFound;
      Image myImage;
+
+
     // Start is called before the first frame update
     void Start()
     {
           //DontDestroyOnLoad(this);
           myImage = GetComponent<Image>();
     }
+
+
 
     // Update is called once per frame
     void Update()
@@ -32,6 +36,11 @@ public class Item : MonoBehaviour
                myImage.enabled = true;
           }
 
+     }
+
+     public bool getIsFound()
+     {
+          return isFound;
      }
 
      public void setIsFound(bool found)
