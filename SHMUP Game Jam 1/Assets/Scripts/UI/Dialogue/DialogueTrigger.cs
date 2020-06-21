@@ -5,6 +5,7 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
      public Dialogue dialogue;
+     public bool hasAnItem;
      [SerializeField]
      GameObject ui_Holder;
      [SerializeField]
@@ -12,6 +13,9 @@ public class DialogueTrigger : MonoBehaviour
 
      void Update()
      {
+          if (hasAnItem)
+          setMyItem();
+
           exitDialogue();
      }
 
@@ -20,6 +24,18 @@ public class DialogueTrigger : MonoBehaviour
           ui_Holder.SetActive(false);
      }
 
+     void setMyItem()
+     {
+          if (myItem == null)
+          {
+               for (int i = 0; i < FindObjectOfType<ItemHolder>().myItemHolder.Length; i++)
+               {
+                    if (FindObjectOfType<ItemHolder>().myItemHolder[i].getIsFound() == true)
+                         continue;
+                    else { myItem = FindObjectOfType<ItemHolder>().myItemHolder[i]; return; }
+               }
+          }
+     }
      // Start is called before the first frame update
      void OnMouseDown()
      {
